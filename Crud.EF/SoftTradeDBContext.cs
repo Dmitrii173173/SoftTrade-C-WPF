@@ -21,11 +21,6 @@ namespace Crud.EF
         {
             modelBuilder.Entity<Client>().HasKey(e => e.Id);
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=.; Database=softtradedb;Trusted_Connection=True");
-            base.OnConfiguring(optionsBuilder);
-        }
 
     }
 }

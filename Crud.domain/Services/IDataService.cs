@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Crud.domain.Services
 {
-    public interface IDataServices<T>
+    public interface IDataService<T>
     {
         Task<IEnumerable<T>> GetAll();
         Task<T> Get(int id);
